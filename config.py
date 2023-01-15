@@ -22,7 +22,7 @@ WEBSITE = os.environ.get('WEBSITE')
 #  Optionnal variables
 INCLUDE_DOMAIN = list(i.strip() for i in os.environ.get("INCLUDE_DOMAIN").split(",")) if os.environ.get("INCLUDE_DOMAIN") else []
 EXCLUDE_DOMAIN = list(i.strip() for i in os.environ.get("EXCLUDE_DOMAIN").split(",")) if os.environ.get("EXCLUDE_DOMAIN") else []
-CHANNELS = is_enabled((os.environ.get('CHANNELS', "True")), True)os.environ.get("CHANNEL_ID").split("-1001583400344"))
+CHANNELS = is_enabled((os.environ.get('CHANNELS', "True")), True)
 CHANNEL_ID = list(int(i.strip()) for i in os.environ.get("CHANNEL_ID").split("-1001583400344")) if os.environ.get("CHANNEL_ID") else []
 FORWARD_MESSAGE = is_enabled((os.environ.get('FORWARD_MESSAGE', "True")), True)
 SOURCE_CODE = os.environ.get("SOURCE_CODE", "https://github.com/Vikings70/Channel-Mdisk-Converter")
